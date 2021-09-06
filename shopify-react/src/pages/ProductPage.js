@@ -4,26 +4,23 @@ import { ShopContext } from "../context/shopContext";
 import { Text, Div, Button, Row, Col, Container } from "atomize";
 import Loading from "../components/Loading";
 
+// use params from react router dom, which we named ID
 const ProductPage = () => {
   let { id } = useParams();
   const { fetchProductWithId, addItemToCheckout, product } = useContext(
     ShopContext
   );
-  // const [product, setProduct] = useState(null)
-  // async function fetchData() {
-  //     const fetchedProduct = await fetchProductWithId(id)
-  //     setProduct(fetchedProduct)
-  // }
+ // add items and product 
 
   useEffect(() => {
     fetchProductWithId(id);
-
-    // fetchData()
+// load the product 
+   
     return () => {
-      // setProduct(null)
+    
     };
   }, [fetchProductWithId, id]);
-
+ // again similar this is coming from shopify
   if (!product.title) return <Loading />;
   return (
     <Container>

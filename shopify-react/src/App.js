@@ -10,6 +10,8 @@ import ProductPage from "./pages/ProductPage";
 import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
 
+
+//You need to wrap your application root with the StyletronProvider and pass an instance of Styletron into it. React context is used in the background to ensure that CSS rules are properly extracted and CSS classes created.
 const debug =
   process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
 const engine = new Styletron();
@@ -34,5 +36,6 @@ const App = () => {
     </ShopProvider>
   );
 };
+// the product:id is the params so you can access the individual page 
 
 export default App;

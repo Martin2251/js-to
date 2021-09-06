@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Algren Pauna</title>
+
+</head>
+<body>
+
+    <header>
+        <nav class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo center">Algren</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                      </a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#portfolio">Portfolio</a></li>
+                      <li><a href="#contact">Contact me</a></li>
+                    </ul>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                          <a
+                            href="https://github.com/algren123"
+                            class="tooltipped btn-floating btn-small orange"
+                            target="_blank"
+                            data-tooltip="GitHub"
+                          >
+                            <i class="fab fa-github"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.linkedin.com/in/algren-pauna/"
+                            class="tooltipped btn-floating btn-small orange"
+                            target="_blank"
+                            data-tooltip="LinkedIn"
+                          >
+                            <i class="fab fa-linkedin"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.artstation.com/algrenpauna"
+                            class="tooltipped btn-floating btn-small orange"
+                            target="_blank"
+                            data-tooltip="Artstation"
+                          >
+                            <i class="fab fa-artstation"></i>
+                          </a>
+                        </li>
+                      </ul>
+                </div>
+              </div>
+        </nav>
+
+
+    </header>
+    <section class="homepage section">
+        <div class="row home-details container">
+            <div class="col hide-on-small-only m3 facepic">
+                <canvas id="lamp-anim" class="lamp-anim" width="350" height="350"></canvas>
+            </div>
+            <div class="col s11 offset-s1 m8 offset-m1 entry-text">
+                <h5>HELLO,</h5>
+                <h1>
+                    <span>I'M</span>
+                    ALGREN PAUNA</h1>
+                <h6 class="flow-text">I'm a UK based web designer & front‑end developer focused on crafting clean & user‑friendly experiences. I am passionate about building excellent software that improves the lives of those around me.</h6>
+                <a class="more-about-me waves-effect waves-light btn orange" href="./CV_Algren_Pauna_Web.pdf" download><i class="material-icons right">arrow_downward</i>Download CV</a>
+            </div>
+        </div>
+    </section>
+        <!--parallax-->
+    <div class="parallax-container">
+        <div class="parallax">
+          <img
+            src="https://images.unsplash.com/photo-1502622796232-e88458466c33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
+            alt=""
+            class="responsive-image"
+          />
+        </div>
+    </div>
+
+    <section class="section scrollspy container" id="about">
+        <div class="row">
+                <div class="col s12 l7"><h1><span>About</span> Me</h1></div>
+                <div class="col s12 l5"><p class="flow-text">I am a self-taught web developer that is looking for opportunities to grow my skillset in a professional environment. I come from a VFX background, however I fell in love with web design and the direct impact it has on its users</div>
+            </div>
+        </div>
+
+        <div class="row container offset-l1">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <h1><span>My</span> Skillset</h1>
+            </div>
+            <div class="col s12 l6 pull-l8 offset-l1 right-align">
+                <p class="flow-text">My strengths are in HTML, CSS, JavaScript (including ES6) and React (with Context and Hooks). I am in the process of learning Gatsby for creating complex single page applications.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l7"><h1><span>Experience &</span> Education</h1></div>
+            <div class="col s12 l5"><p class="flow-text">I received a 2:1 in my VFX Bsc (Hons) degree from De Montfort University where I learned the beauty of good design. I am an Activities Coordinator for IKEA, it is a role focused on data analysis, marketing and organisation.</div>
+        </div>
+    </div>
+    </section>
+
+    <section class="section scrollspy container" id="portfolio">
+        <div class="row center">
+            <h1 class="orange-text"><span>My </span>Portfolio</h1>
+        </div>
+
+        <!--Portfolio cards-->
+
+        <div class="row">
+
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./todo-app.JPG">
+                <span class="card-title black-text">React To-Do List App</span>
+              </div>
+              <div class="card-content">
+                <p class="black-text">
+                  This app was created using React and React Hooks. The CSS framework used was Materialize. It showcases the ability to create To-dos, the mark them as "complete" and to remove them. It also uses Javascript's Date object.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="https://algren-todo-app.netlify.app/" target="_blank">Live</a>
+              </div>
+              <div class="card-action">
+                <a href="https://github.com/algren123/react-todo-app" target="_blank">GitHub repo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./minimalism.JPG">
+                <span class="card-title black-text">Materialize Website</span>
+              </div>
+              <div class="card-content">
+                <p class="black-text">
+                  The website was created based on a replica of an E-Commerce Website Design template that I attempted to re-create myself using Materialize and Sass. It features some of Materialize's best features, such as parallax, tooltips, datepicker, scrollspy, card and more. At the bottom I also put in action Google's Maps API.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="https://suspicious-bhaskara-c02925.netlify.app/" target="_blank">Live</a>
+              </div>
+              <div class="card-action">
+                <a href="https://github.com/algren123/materialize-website" target="_blank">GitHub repo</a>
+              </div>
+            </div>
+          </div>
+            <div class="col s12 l3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="./finance_calculator.JPG">
+                  <span class="card-title black-text">Finance Calculator</span>
+                </div>
+                <div class="card-content">
+                  <p class="black-text">A calculator that lets the user calculate finance plans and payments from amount, term length, interest rates and deposit amount.
+
+                    It also has a tab that allows the user to input what monthly payment he can afford and the program calculates what loan he would find affordable according to the input.
+
+                    Using HTML, CSS, Javascript and Bootstrap</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://inspiring-curie-5ee8a2.netlify.app/" target="_blank">Live</a>
+                </div>
+                <div class="card-action">
+                  <a href="https://github.com/algren123/financeCalculator" target="_blank">Github Repo</a>
+                </div>
+              </div>
+            </div>
+              <div class="col s12 l3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="./BudgetTracker.JPG">
+                    <span class="card-title black-text">Budget Tracker</span>
+                  </div>
+                  <div class="card-content">
+                    <p class="black-text">This is a web app that tracks your Budget.
+
+                      You can add incomes and expenses and the app can calculate your total remaining budget and shows your total expenses/income.
+
+                      You are able to Create a payment, Read the payment, Edit the payment and Delete the payment.
+
+                      I now plan on adding local storage and updating the design</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://loving-austin-eb60e6.netlify.app/" target="_blank">Live</a>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://github.com/algren123/budget-tracker" target="_blank">Github Repo</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
+    </section>
+
+    <section class="section scrollspy container" id="contact">
+      <div class="row center">
+        <h1 class="orange-text"><span>Contact </span>Me</h1>
+        <p class="flow-text">Feel free to message me if you have any questions or opportunities!</p>
+    </div>
+
+    <div class="row center">
+      <div class="col s12">
+        <h1 class="flow-text"><span>E-mail:</span> algren.pauna@gmail.com</h1>
+        <h1 class="flow-text"><span>Phone:</span> +447500325912</h1>
+        <h1 class="flow-text"><span>LinkedIn: </span> <a href="https://www.linkedin.com/in/algren-pauna/" target="_blank">https://www.linkedin.com/in/algren-pauna/</a></h1>
+      </div>
+    </div>
+    </section>
+
+
+      <div class="footer-copyright">
+        <div class="container center white-text">
+        © 2020 Algren Pauna
+        </div>
+      </div>
+
+
+    <script src="./app.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7WQpliaBa9uZAjZVU45PnVlTGCyNFEMI&callback=initMap"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c8ead8408d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $('button').click(function () {
+        $('html,body').animate(
+          {
+            scrollTop: $('#lookbook').offset().top,
+          },
+          'slow'
+        );
+      });
+
+      $(document).ready(function () {
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+      });
+    </script>
+</body>
+</html>

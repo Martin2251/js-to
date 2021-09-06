@@ -2,3 +2,10 @@ body {
   background-color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
+
+.App{
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #333;
+
+}

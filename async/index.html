@@ -1,0 +1,22 @@
+<body>
+  <h2> Data from backend</h2>
+  <div id="content"><h1>loading....</h1></div>
+  </body>
+<script>
+console.log("1. sending request ...")
+
+
+async function fetchData(){
+  const response = await fetch ("http://www.omdbapi.com/?i=tt3896198&apikey=91545615");
+  const data = await response.json()
+
+  document.getElementById("content").innerHTML = "<h1>" + data.Title + "</h1>";
+
+}
+
+  fetchData()
+
+console.log("2. Request Was Sent")
+
+
+</script>

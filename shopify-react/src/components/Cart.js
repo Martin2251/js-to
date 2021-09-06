@@ -14,9 +14,10 @@ import { ShopContext } from "../context/shopContext";
 
 const Cart = () => {
   const { isCartOpen, closeCart, checkout } = useContext(ShopContext);
-
+// using atmoize to show if the side is open or close
   if (checkout.lineItems) {
     return (
+      // this is coming from our context 
       <SideDrawer isOpen={isCartOpen} onClose={closeCart}>
         <Container d="flex" flexDir="column" h="100%">
           <Row
@@ -114,3 +115,4 @@ const Cart = () => {
 };
 
 export default Cart;
+// checkout is coming fom the Shopify SDK API which is provided
